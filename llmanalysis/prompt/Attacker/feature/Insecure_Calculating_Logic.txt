@@ -1,3 +1,0 @@
-1. execute an interest rate update after distributing rewards or after checking the borrowed balance?
-2. call a user checkpoint function after updating the balances/reward?
-3. send the first minimum liquidity LP tokens to the pool when totalSupply is 0 to enable share dilution?

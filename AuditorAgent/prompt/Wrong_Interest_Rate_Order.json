@@ -1,0 +1,5 @@
+{
+    "type": "Wrong Interest Rate Order",
+    "scenario": "have inside code statements that update/accrue interest/exchange rate",
+    "property": "and have inside code statements that calculate/assign/distribute the balance/share/stake/fee/loan/reward"
+}

@@ -1,0 +1,6 @@
+{
+    "type":"Non-AMM Price Oracle Manipulation",
+    "V1": "the amount of tokens spent by the user before the swap",
+    "V2": "the amount of tokens received by the user after the swap",
+    "checker":"ExchangeRate_Checker(V1,V2)"
+}

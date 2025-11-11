@@ -1,0 +1,18 @@
+{
+    "category": "Price Oracle Manipulation",
+    "feature":[
+        "Does the smart contract code call a trusted API to obtain the LP token's value/price?",
+        "Does the smart contract code determine the token value/price using a manipulation-resistant oracle, such as a TWAP oracle or Chainlink oracle?",
+        "Does the smart contract code calculate the token value/price using an anti-flash loan formula, such as the one provided by Alpha Finance?",
+        "Does the smart contract code establish a slippage limit and enforce it?",
+        "Does the smart contract code utilize an Automated Market Maker (AMM) for token purchases?"
+    ],
+    "vul_ans":[
+        "No",
+        "No", 
+        "No", 
+        "No", 
+        "No"
+    ],
+    "model": "Typical steps in a price manipulation attack include: borrowing a substantial amount of tokens using mechanisms like flash loans, disrupting th token pair's exchange rate in an Automated Market Maker (AMM), executing token swaps through the manipulation of application contracts with the AMM, and finally, re-establishing the exchange rate equilibrium of the token pair in the AMM to secure a profit. Based on this information, can the provided smart contract code be susceptible to a price manipulation attack? Respond with a simple 'Yes' or 'No'."
+}

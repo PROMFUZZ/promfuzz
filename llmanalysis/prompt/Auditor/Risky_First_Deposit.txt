@@ -1,2 +1,0 @@
-scenario:deposit/mint/add the liquidity pool/amount/share
-property:and set the total share to the number of first deposit when the supply/liquidity is 0

@@ -1,0 +1,5 @@
+{
+"type": "Non-AMM Price Oracle Manipulation",
+"scenario": "involve calculating swap/liquidity or adding liquidity, and there is asset exchanges or price queries",
+"property": "but this operation could be attacked by slippage/Sandwich Attack due to no slip limit/minimum value check"
+}

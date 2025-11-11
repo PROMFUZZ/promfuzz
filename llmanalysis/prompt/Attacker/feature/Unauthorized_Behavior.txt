@@ -1,2 +1,0 @@
-1. revoke the approval after the token transfer？
-2. determine the legitimacy of the token transfer address and the message sending address？

@@ -1,0 +1,5 @@
+{
+    "type": "AMM Price Oracle Manipulation",
+    "V1": "calculated price of the LP token",
+    "checker":"PriceChange_Checker(V1)"
+}

@@ -1,0 +1,5 @@
+{
+    "type":"Unauthorized Transfer",
+    "scenario":"involve transfering token from an address different from message sender",
+    "property":"and there is no check of allowance/approval from the address owner"
+}

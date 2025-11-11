@@ -1,3 +1,0 @@
-V1: the array where the first element is used to store the user’s original locked amount 
-V2: the amount by which the user’s locked funds have increased or decreased
-V3: stores the new locked amount after increasing or decreasing based on the isIncrease flag

@@ -1,0 +1,7 @@
+{
+    "type": "Improper Handling of Deposit Fee",
+    "V1": "the amount of tokens spent by the user without any deductions",
+    "V2": "the net amount added to the user’s balance after deducting the deposit fee",
+    "V3": "the amount of deposit fee",
+    "checker":"TokenChange_Checker(V1,V2,V3)"
+}

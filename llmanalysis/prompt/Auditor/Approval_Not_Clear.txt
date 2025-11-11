@@ -1,2 +1,0 @@
-scenario:add or check approval via require/if statements before the token transfer
-property:and there is no clear/reset of the approval when the transfer finishes its main branch or encounters exceptions

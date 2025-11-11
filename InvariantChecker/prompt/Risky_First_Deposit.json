@@ -1,0 +1,7 @@
+{
+    "type":"Risky First Deposit",
+    "V1": "the total supply of tokens",
+    "V2": "the share that a user can obtain Share",
+    "V3": "the amount of tokens spent by the user",
+    "checker": "ShareSafety_Checker(V1,V2,V3)"
+}

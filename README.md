@@ -1,48 +1,94 @@
 # PROMFUZZ
 
 
-In PROMFUZZ, we first propose a novel Generative Pre-trained Transformer (GPT)-driven analysis framework, which leverages a dual-agent prompt engineering strategy to pinpoint potentially vulnerable functions for further scrutiny. We then implement a dual-stage coupling approach, which focuses on generating invariant checkers that leverage logic information extracted from potentially vulnerable functions. Finally, we design a bug-oriented fuzzing engine, which maps the logical information from the high-level business model to the low-level smart contract implementations, and performs the bug-oriented fuzzing on targeted functions.
+
+
+## Overview
+
+PROMFUZZ is an automated and scalable system that leverages LLM-driven, bug-oriented composite analysis to effectively identify functional bugs in smart contracts.
+
+Its core design is based on three key insights:
+
+1. **LLM-Driven Multi-Perspective Analysis**
+2. **Dual-Stage Invariant Checker Generation**
+3. **Bug-Oriented Fuzzing Engine**
+
+---
 
 
 
-## Installation
+## Install
+
+### 0. Setup Requirements
+
+- Docker
+- Python 3.7+
+- Pip
 
 
-Follow the steps below to install and set up the project on your local machine:
 
+### 1. Build the fuzzing engine (Docker)
+
+- See: [Build Instructions](./Engine/README.md)
+
+- This step must be completed first since you need the container ID.
+
+
+### 2. Install Python dependencies
+
+```bash
+pip install -r requirements.txt
 ```
-    pip install -r requirements.txt  # The file was exported directly from my machine。
 
-    sudo apt install libssl-dev libz3-dev pkg-config cmake build-essential clang
-    
-    cd ./fuzzingengine 
 
-    cargo build --release
+### 3. Configure your LLM API key
 
+- Linux / macOS:
+
+```bash
+export OPENAI_API_KEY="your_api_key"
 ```
 
+- Windows PowerShell:
+
+```powershell
+$env:OPENAI_API_KEY = "your_api_key"
+```
+
+- Get your API key from: https://platform.openai.com/account/api-keys
 
 
 ## Usage
 
-### LLM-driven Multi-Perspective Analysis & Invariant Generation
+
+- To run PROMFUZZ, use the following command:
+
+```bash
+python promfuzz.py \
+    --input=<SOLIDITY_FILE_PATH> \
+    --containerid=<ENGINE_CONTAINER_ID> \
+    --enginetimeout=<ENGINE_TIMEOUT_IN_SECONDS>
+```
+
+- Example:
+
+```bash
+python promfuzz.py \
+    --input=MyContract.sol \
+    --containerid=ab12cd34ef56 \
+    --enginetimeout=180
+
+```
 
 
-* Invoke the python API in `./llmanalysis/script` and `./invariantgenerant/script`
+## Citation 
+If you use PROMFUZZ in your research, please cite the following paper:
 
-### Bug-oriented Analysis Engine
-
-* Insert the previously generated invariant into the smart contract.
-
-* Move the smart contract files to the `./fuzzingengine/contracts` directory, and compile Smart Contracts.
-
-    ```solc *.sol -o . --bin --abi ```
-
-* Running the analysis engine.
-
-    ```./fuzzingengine/target/release/cli evm -t './contracts/*' ```
-
-
-
-
-
+```
+@inproceedings{promfuzz,  
+  author = {Xingshuang Lin and Qinge Xie and Binbin Zhao and Yuan Tian and Saman Zonouz and Na Ruan and Jiliang Li and Raheem Beyah and Shouling Ji}, 
+  title = {PROMFUZZ: Leveraging LLM-Driven and Bug-Oriented Composite Analysis for Detecting Functional Bugs in Smart Contracts},  
+  booktitle = { {IEEE/ACM} International Conference on Automated Software Engineering ({ASE}) },  
+  year = {2025},  
+}
+```

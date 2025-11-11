@@ -1,3 +1,0 @@
-1. ensure that both the deposited amount and fee are transferred to a specific address?
-2. have a flaw in the locking mechanism that could potentially be exploited?
-3. allow bypassing conditional checks to vote?

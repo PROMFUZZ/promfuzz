@@ -1,0 +1,6 @@
+{
+    "type":"Wrong Checkpoint Order",
+    "S1": "the first to record the checkpoint",
+    "S2": "the first to perform a calculation or update on the tokens",
+    "checker": "StatementOrder_Checker(S1,S2)"
+}

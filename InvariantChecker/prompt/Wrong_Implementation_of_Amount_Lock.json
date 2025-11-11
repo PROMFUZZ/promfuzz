@@ -1,0 +1,7 @@
+{
+    "type":"Wrong Implementation of Amount Lock",
+    "V1": "visitng the user's original locked amount",
+    "V2": "the amount by which the user’s locked funds have increased or decreased",
+    "V3": "stores the new locked amount after increasing or decreasing based on the isIncrease flag",
+    "checker":"TokenChange_Checker(V1,V2,V3)"
+}

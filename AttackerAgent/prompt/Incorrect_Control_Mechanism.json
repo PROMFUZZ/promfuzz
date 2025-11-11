@@ -1,0 +1,14 @@
+{
+    "category": "Incorrect Control Mechanism",
+    "feature":[
+        "Does the smart contract code ensure that both the deposited amount and fee are transferred to a specific address?",
+        "Does the smart contract code have a flaw in the locking mechanism that could potentially be exploited?",
+        "Does the smart contract code allow bypassing conditional checks to vote?"
+    ],
+    "vul_ans":[
+        "No",
+        "Yes",
+        "Yes"
+    ],
+    "model": "Incorrect Control Mechanism vulnerabilities refer to an exploiter taking advantage of unreasonable control designs in the contract, potentially harming its orderly execution. Possible unreasonable control designs include: improper or faulty token locking mechanisms, improper or faulty token distribution mechanisms (which may cause dead accounts), and improper or faulty voting mechanisms (which may lead to illegal voting and vote manipulation). Based on this information, can the provided smart contract code be susceptible to an attack that exploits such vulnerabilities in Incorrect Control Mechanism? Respond with a simple 'Yes' or 'No'"
+}

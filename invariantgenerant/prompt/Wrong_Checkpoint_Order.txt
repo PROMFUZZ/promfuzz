@@ -1,2 +1,0 @@
-S1: the first to call the checkpoint
-S2: the fitst to perform a calculation or update on the tokens

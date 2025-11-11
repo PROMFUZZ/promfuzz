@@ -1,0 +1,14 @@
+{
+    "category": "Insecure Calculating Logic",
+    "feature":[
+        "Does the smart contract execute an interest rate update after distributing rewards or after checking the borrowed balance?",
+        "Does the smart contract call a user checkpoint function after updating the balances/reward?",
+        "Does the smart contract code send the first minimum liquidity LP tokens to the pool when totalSupply is 0 to enable share dilution?"
+    ],
+    "vul_ans":[
+        "Yes",
+        "Yes",
+        "Yes"
+    ],
+    "model": "Insecure Calculating Logic Vulnerability refers to an exploiter taking advantage of unsafe or unreasonable sequences to potentially gain illegal profits. These unsafe calculation sequences include the order of interest rate calculations, checkpoint sequences, and the sequence of token pool depositors. Based on this information, can the provided smart contract code be susceptible to an attack that exploits such vulnerabilities in the order of calculations? Respond with a simple 'Yes' or 'No'."
+}

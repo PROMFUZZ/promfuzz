@@ -1,0 +1,7 @@
+{
+    "type":"Vote Manipulation",
+    "V1": "contract variable for voting tokens",
+    "V2": "the amount of voting tokens cast by the user in this round",
+    "S1": "the first to execute a voting action",
+    "checker": "StateChange_Checker(V1,V2,S1)"
+}

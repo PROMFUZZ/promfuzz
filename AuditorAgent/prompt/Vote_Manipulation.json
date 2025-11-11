@@ -1,0 +1,5 @@
+{
+    "type":"Vote Manipulation",
+    "scenario":"calculate vote amount/number",
+    "property":"and this vote amount/number is from a vote weight that might be manipulated by flashloan"
+}

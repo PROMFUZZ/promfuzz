@@ -1,2 +1,0 @@
-scenario:handle locked amount adjustments
-property:and include statements for processing the locked amount based on the increase or decrease condition

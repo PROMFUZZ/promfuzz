@@ -1,5 +1,0 @@
-1. call a trusted API to obtain the LP token's value/price?
-2. determine the token value/price using a manipulation-resistant oracle, such as a TWAP oracle or Chainlink oracle?
-3. calculate the token value/price using an anti-flash loan formula, such as the one provided by Alpha Finance?
-4. establish a slippage limit and enforce it?
-5. utilize an Automated Market Maker (AMM) for token purchases?

@@ -1,3 +1,0 @@
-V1: the total supply of tokens
-V2: the share that a user can obtain Share
-V3: tokens spent by the user

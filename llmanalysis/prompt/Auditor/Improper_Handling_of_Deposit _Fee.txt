@@ -1,2 +1,0 @@
-scenario:handle deposit transactions in a pool
-property:and include statements for processing the user's deposit amount and calculating the fee

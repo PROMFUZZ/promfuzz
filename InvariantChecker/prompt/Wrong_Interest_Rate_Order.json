@@ -1,0 +1,6 @@
+{
+    "type":"Wrong Interest Rate Order",
+    "S1": "the first to update the interest",
+    "S2": "the first to use the interest rate to calculate or update the token balance, rewards, or shares",
+    "checker": "StatementOrder_Checker(S1,S2)"
+}
